@@ -179,13 +179,6 @@ h2.japanese-text {
     border-radius: 5px;
 }
 /* Estilo general para el formulario */
-form {
-    max-width: 600px;
-    margin: auto;
-    padding: 1em;
-    background: #f9f9f9;
-    border-radius: 5px;
-}
 
 form {
     max-width: 600px;
