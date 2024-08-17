@@ -33,8 +33,8 @@ function currentSlide(index) {
 showSlide(currentIndex);
 function switchLanguage(lang) {
     if (lang === 'es') {
-        window.location.href = 'index_es.html';
-    } else {
         window.location.href = 'index.html';
+    } else {
+        window.location.href = 'index_en.html';
     }
 }
