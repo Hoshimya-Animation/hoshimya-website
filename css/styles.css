@@ -1,6 +1,9 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Akshar", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,6 +41,10 @@ nav ul li a:hover {
     background-color: #2A9D8F;
     border-radius: 5px;
 }
+
+
+
+
 
 section {
     padding: 40px 20px;
@@ -136,6 +143,101 @@ section {
 
 .section.bottom.visible {
     animation: slideFromBottom 0.6s ease-in-out;
+}
+/* Iconos del cuerpo */
+.social-ico {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+   z-index: 1000;
+    
+}
+.icons {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: width .5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.icons:first-child {
+    border-top-right-radius: 10px;
+}
+
+.icons:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.icons:hover {
+    width: 70px;
+}
+
+.icons.fb {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #3A579A;
+    color: white;
+}
+
+.icons.yb {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.icons.x {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #070709;
+    color: white;
+}
+
+.icons.instagram {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+}
+
+.icons.tiktok {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #070709;
+    color: white;
+}
+
+
+.icons.github {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #070709;
+    color: white;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+    .icons {
+        display: none;
+    } 
+}
+
+@media (max-width: 480px) {
+    .icons{
+        display: none;
+    }
 }
 
 
@@ -297,17 +399,58 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
-.social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px;
-    text-decoration: none;
+/*Iconos de footer*/
+/*Change icons size here*/
+.social-icons .fab{
+	font-size: 1.6em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fab{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
-.social-icons a:hover {
-    color: #f39c12; /* Color al pasar el mouse */
+
+.social-icons.icon-circle .fab{ 
+	border-radius: 50%;
 }
+
+.social-icons.icon-rounded .fab{
+	border-radius:4px;
+}
+
+.social-icons.icon-flat .fab{
+	border-radius: 0;
+}
+
+.social-icons.icon-rotate .fab:hover, .social-icons.icon-rotate .fab:active { 
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+}
+
+.social-icons .fa-github{background-color:#070709;} 
+.social-icons .fa-youtube{background-color:#C52F30;}
+.social-icons .fa-facebook{background-color:#3C599F;}
+.social-icons .bi-twitter-x{background-color:#070709;}
+.social-icons .fa-x{background-color:#070709;}
+.social-icons .fa-tiktok{background-color:#070709;}
+.social-icons .fa-instagram{background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+
 
 /* Estilos generales y responsivos */
 
