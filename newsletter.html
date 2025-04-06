@@ -24,18 +24,18 @@
   <header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="https://podcast.hoshimyanimation.me/index_en.html">Podcast</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" target="_blank">Inicio</a></li>
+          <li><a href="index.html#about" target="_blank">Sobre Nosotros</a></li>
+          <li><a href="index.html#services">Servicios</a></li>
+          <li><a href="index.html#projects">Proyectos</a></li>
+          <li><a href="https://podcast.hoshimyanimation.me">Podcast</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
   </header>
 
-  <form action="" method="POST">
+  <form name="form-data">
     <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" required>
       <br><br>
@@ -315,7 +315,7 @@
       <br><br>
   
     <label for="language">Idioma:</label>
-        <select data-placeholder="Elija un idioma...">
+        <select data-placeholder="Elija un idioma..." name="language">
         <option value="AF">Afrikáans</option>
         <option value="SQ">Albanés</option>
         <option value="DE">Alemán</option>
@@ -397,7 +397,7 @@
       Acepto los <a href="/terms-and-conditions" target="_blank">términos y condiciones</a>
       </label>
       <br><br>
-  
+    <div class="g-recaptcha" data-sitekey="6Ld1qwsrAAAAAJHtpN6FVz5crz-GvLSHX32tKV13"></div>
     <button type="submit">Suscribirse</button>
   </form>
 
@@ -417,7 +417,7 @@
     </div>
     <p>&copy; 2024 HoshimyAnimation. All rights reserved.</p>
   </footer>
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/animation.js"></script>
   <script src="js/carrousel.js"></script>
   <script src="js/script.js"></script>

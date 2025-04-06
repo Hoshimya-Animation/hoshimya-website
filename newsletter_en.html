@@ -24,18 +24,17 @@
   <header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="https://podcast.hoshimyanimation.me/index_en.html">Podcast</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+                <li><a href="index_en.html" target="_blank">Home</a></li>
+                <li><a href="index_en.html#about" target="_blank">About Us</a></li>
+                <li><a href="index_en.html#services" target="_blank">Services</a></li>
+                <li><a href="index_en.html#projects" target="_blank">Projects</a></li>
+                <li><a href="https://podcast.hoshimyanimation.me/index_en.html">Podcast</a></li>
+                <li><a href="index_en.html#blog" target="_blank">Blog</a></li>
+                <li><a href="#">Contact</a></li>
         </ul>
     </nav>
   </header>
-
-  <form action="" method="POST">
+  <form  name="form-data">
     <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <br><br>
@@ -395,7 +394,7 @@
       I accept the <a href="/terms-and-conditions" target="_blank">terms and conditions</a>
       </label>
       <br><br>
-  
+    <div class="g-recaptcha" data-sitekey="6Ld1qwsrAAAAAJHtpN6FVz5crz-GvLSHX32tKV13"></div>
     <button type="submit">Subscribe</button>
   </form>
 
@@ -415,7 +414,7 @@
     </div>
     <p>&copy; 2024 HoshimyAnimation. All rights reserved.</p>
   </footer>
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/animation.js"></script>
   <script src="js/carrousel.js"></script>
   <script src="js/script.js"></script>
