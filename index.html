@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" type="img/stars" href="img/stars.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="keywords" content="Anime, Manga, Oportunidades laborales, Publicar, Distribuir, Animar, Novelas ligeras, Japón, Latinoamérica, Costo mínimo, Recursos limitados, Imaginación">
-    <meta name="description" content="Nuestra empresa crea oportunidades laborales y proporciona plataformas para publicar, distribuir y animar novelas ligeras y manga. Nuestro objetivo es producir anime no sólo de Japón sino también de América Latina. Ofrecemos estos servicios a un coste mínimo, especialmente para personas con recursos limitados que quieran dar rienda suelta a su imaginación.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="keywords" content="Anime, Manga, Oportunidades laborales, Publicar, Distribuir, Animar, Novelas ligeras, Japón, Latinoamérica, Talento emergente, Creatividad, Sueños, Cultura japonesa, Asia.">
+    <meta name="description" content="Creamos oportunidades para artistas y ofrecemos plataformas donde puedan publicar, distribuir y animar sus obras. Queremos producir anime no solo en Japón, sino también en América Latina, dando visibilidad al talento local.
+    Todo esto lo hacemos a un costo accesible, especialmente para quienes tienen recursos limitados pero un mundo de imaginación por compartir.">
     <meta http-equiv="Cache-control" content="no-cache"/>
     <meta http-equiv="X-Frame-Options" content="sameorigin"/>
     <meta http-equiv="pragma" content="no-cache"/>
@@ -40,89 +43,112 @@
     <main>
         <section id="home">
             <h1>Bienvenidos a Nuestra Página de Animación y Creación Literaria</h1>
-            <p>Explora nuestras historias y creaciones.</p>
+            <p>Explora historias únicas y da vida a tus creaciones</p>
         </section>
         <section id="about">
             <h2>Sobre Nosotros</h2>
-            <p>Somos una empresa dedicada a la creación de manga, novelas ligeras y también música. Además, promover la cultura japonesa, ofreciendo oportunidades a personas de escasos recursos.
-            Hay muchos artistas que quieren hacer realidad su sueño, ser mejores artistas, participar en la creación de un anime, para que todos conozcan sus creaciones. Pero no existe un recurso económico como en otros países, por eso, hemos decidido impulsar ese sueño y alcanzar sus metas.</p>
+            <p>Somos una empresa apasionada por la creatividad y la narrativa visual. Nos especializamos en la creación de manga, novelas ligeras y música, promoviendo la cultura japonesa mientras brindamos oportunidades a artistas con recursos limitados.
+            Sabemos que muchos creadores sueñan con ver sus obras convertidas en anime, pero la falta de recursos puede hacer que ese sueño parezca inalcanzable. Por eso, nos comprometemos a impulsar el talento emergente y ayudarles a cumplir sus metas.</p>
         </section>
-        <section id="services" class="section">
+        <section class="card-flex section" id="services">
             <h2>Servicios</h2>
-            <div>
-                <h3>Desarrollo de Mangas</h3>
-                <p>Ofrecemos servicios completos de desarrollo de mangas, desde la conceptualización hasta la publicación.</p>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Animation-manga.jpg">
+                    <h3>Publicación de obras</h3>
+                </div>
+                <div class="face back">
+                    <h3>Publicación, edición de mangas y novelas ligeras, etc.</h3>
+                    <p>Desde la conceptualización hasta la publicación, ofrecemos un servicio integral para llevar tu obra al siguiente nivel.</p>
+                    <div class="link-card">
+                        <a href="#">Detalles</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Creación de Novelas Ligeras</h3>
-                <p>Ayudamos a crear novelas ligeras desde la idea hasta la publicación, brindando apoyo en cada etapa del proceso creativo.</p>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Animation-lgnov.png">
+                    <h3>Asesoría, talleres y animación</h3>
+                </div>
+                <div class="face back" style="background: rgb(242, 183, 5);">
+                    <h3>Asesoría, talleres y animación</h3>
+                    <p>Te proporcionamos herramientas y conocimientos esenciales para perfeccionar tus habilidades. Además, si tu obra gana popularidad, tendrás la oportunidad de animarla y hacer realidad tu propio anime.</p>
+                    <div class="link-card">
+                        <a href="#">Detalles</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Asesoría y Talleres</h3>
-                <p>Ofrecemos asesoría y talleres para creadores con pocos recursos, proporcionando herramientas y conocimientos esenciales.</p>
-            </div>
-            <div>
-                <h3>Animación de tu manga o novela ligera</h3>
-                <p>Si tu creación se vuelve muy popular, tendrás la oportunidad de animarla y crear tu propio anime.</p>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Animation-copyright.jpg">
+                    <h3>Protección de derechos de autor</h3>
+                </div>
+                <div class="face back" style="background: rgb(17, 24, 42);">
+                    <h3>Protección de derechos de autor</h3>
+                    <p>Ya sea un dibujo, animación o obra literaria, garantizamos que tu creación será reconocida como tuya. Tú decides si hacerla pública o mantenerla privada.</p>
+                    <div class="link-card">
+                        <a href="#">Detalles</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="carousel-container section">
+        <div class="carousel-container section location">
             <div class="carousel">
                 <div class="carousel-slide">
                     <!--Size of pictures 1600x900-->
                     <img src="img/Animation_1.webp" alt="Imagen 1" width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Te gusta dibujar dibujos de anime?</h2>
-                        <p>WNos aseguramos de que sea recompensado a un precio bajo.</p>
+                        <h2>¿Te apasiona dibujar anime? 📌</h2>
+                        <p>Haz que tu talento brille y obtén reconocimiento a un precio accesible.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_2.webp"  alt="Imagen 2"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Te gusta crear tus propios mangas y que todos los lean?</h2>
-                        <p>Hacemos realidad tus sueños.</p>
+                        <h2>¿Sueñas con crear tu propio manga y compartirlo con el mundo? ✨</h2>
+                        <p>Nosotros lo hacemos posible. Da vida a tu historia y deja que otros disfruten tu obra.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_3.webp"  alt="Imagen 3"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Quieres animar tu novela ligera y tu vela para transmitirla por Internet?</h2>
-                        <p>Animémoslo y veamos cuántos corazones toca tu historia hasta llegar a las estrellas...</p>
+                        <h2>¿Quieres ver tu novela ligera convertida en animación y compartirla en línea? 🚀</h2>
+                        <p>Hagamos realidad tu proyecto y toquemos corazones con tu historia.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_4.webp" alt="Imagen 4"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Estás buscando trabajo como artista o dibujante?</h2>
-                        <p>Forma parte de nuestro equipo y haz realidad tus sueños. Buscamos gente como tú.</p>
+                        <h2>¿Buscas trabajo como artista o dibujante? 💼</h2>
+                        <p>Únete a nuestro equipo y lleva tu talento al siguiente nivel. ¡Estamos buscando gente como tú!</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_5.webp"alt="Imagen 5"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Te gustaría ver tu anime favorito sin publicidad ni malware?</h2>
-                        <p>No te preocupes, estamos creando una nueva web para ver anime libremente y sin publicidad y sin IA para completar tus datos. Su privacidad es lo más importante para nosotros.</p>
+                        <h2>¿Quieres ver anime sin interrupciones ni riesgos? 🔒</h2>
+                        <p>Disfruta de tus series favoritas sin publicidad invasiva ni preocupaciones de seguridad. Tu privacidad es nuestra prioridad.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_6.webp" alt="Imagen 6"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Eres programador?</h2>
-                        <p>Nuestros programas son de código abierto, no dudes en hacer tu contribución en GitHub o enviar tu CV para conseguir un trabajo con nosotros.</p>
+                        <h2>¿Eres programador y te apasiona el código abierto?💻</h2>
+                        <p>Contribuye a nuestros proyectos en GitHub o envíanos tu CV para formar parte de nuestro equipo. ¡Tu talento puede marcar la diferencia!</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_7.webp" alt="Imagen 7"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Eres una mangaka femenina?</h2>
-                        <p>Si quieres compartir tu trabajo de forma anónima, te creamos un seudónimo hasta que quieras ser una figura pública.</p>
+                        <h2>¿Eres una mangaka y prefieres compartir tu obra de forma anónima? 🌸</h2>
+                        <p>Te ayudamos a crear un seudónimo hasta que decidas dar el paso al reconocimiento público.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <img src="img/Animation_8.webp"alt="Imagen 8"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>¿Quieres convertirte en AV o quieres dar a conocer tu música?</h2>
-                        <p>Forma parte de nuestro equipo y haz realidad tus sueños. Buscamos gente como tú.</p>
+                        <h2>¿Sueñas con ser actor de voz o dar a conocer tu música? 🎶</h2>
+                        <p>Únete a nuestro equipo y deja que tu voz y talento lleguen al mundo. Buscamos artistas como tú.</p>
                     </div>
                 </div>
             </div>
@@ -139,10 +165,32 @@
                 <span class="dot" onclick="currentSlide(7)"></span>
             </div>
         </div>
-        <section  id="projects" class="section">
+        <section id="projects" class="section">
             <h2>Proyectos</h2>
-            <p>Descripción del proyecto 1: una fascinante historia de aventura y amistad.</p>
-            <p>Descripción del proyecto 2: un cuento épico que explora los límites de la imaginación.</p>
+            <div class="container swiper">
+                <div class="card-wrapper swiper-container">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="https://i.ytimg.com/vi/t5WcL8kiqnE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjHuqgXYeXfSKmkn1TYbeSlxBomgg" alt="Card Image" class="card-image">
+                                <p class="badge badge-video">Vídeo</p>
+                                <h2 class="card-title">FILCO 2025</h2>
+                                <button class="card-button">→</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=zasla1rpPpA" target="_blank" class="card-link">
+                            <img src="https://tube.xy-space.de/lazy-static/previews/8d87959f-9c70-45ba-91f5-d315f5e34851.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-video">Vídeo</p>
+                            <h2 class="card-title">Haru Matsuri 2025 CDMX (春まつり'25)</h2>
+                            <button class="card-button">→</button>
+                        </a>
+                    </li>
+                </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         </section>
         <section id="blog" class="section">
             <h2>Blog</h2>
@@ -162,7 +210,7 @@
             <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35"class="icons x" target="_blank" title="X">
                 <i class="bi bi-twitter-x" aria-hidden="true"></i>
             </a>
-            <a href="https://www.youtube.com/@HoshiMyTV" target="_blank"class="icons yb" title="YouTube">
+            <a href="https://www.youtube.com/@HoshiiTV" target="_blank"class="icons yb" title="YouTube">
                 <i class="bi bi-youtube" aria-hidden="true"></i>
             </a>
             <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" class="icons instagram" target="_blank" title="Instagram">
@@ -180,7 +228,7 @@
     <footer class="section">
         <div class="social-icons icon-circle icon-rotate list-unstyled list-inline">
             <a href="https://github.com/Hoshimya-Animation"target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/@HoshiMyTV" target="_blank"title="YouTube"><i class="fab fa-youtube" ></i></a>
+            <a href="https://www.youtube.com/@HoshiiTV" target="_blank"title="YouTube"><i class="fab fa-youtube" ></i></a>
             <a href="https://www.facebook.com/share/1BPk31q3uG/" target="_blank"title="Facebook"><i class="fab fa-facebook" ></i></a>
             <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35" target="_blank" title="X"><i class="fab fa-x"></i></a>
             <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" target="_blank"title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -194,6 +242,8 @@
     </footer>
     <script src="js/animation.js"></script>
     <script src="js/carrousel.js"></script>
+    <script src="js/card-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

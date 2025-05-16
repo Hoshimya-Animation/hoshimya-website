@@ -1,4 +1,4 @@
-/* General Styles */
+/* Estilos generales */
 body {
     font-family: "Akshar", serif;
     font-optical-sizing: auto;
@@ -41,11 +41,6 @@ nav ul li a:hover {
     background-color: #2A9D8F;
     border-radius: 5px;
 }
-
-
-
-
-
 section {
     padding: 40px 20px;
     text-align: center;
@@ -81,6 +76,217 @@ section {
 .section.visible {
     opacity: 1;
     transform: translateX(0) translateY(0);
+}
+
+/* Sección card slider */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card-wrapper {
+    position: relative;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.card-item {
+    flex: 1;
+}
+
+.card-link {
+    display: block;
+    background: #fff;
+    padding: 18px;
+    user-select: none;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in-out;
+}
+
+.card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.badge {
+    width: fit-content;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    font-weight: 500;
+    margin: 16px 0 18px;
+}
+
+.badge-video {
+    color: #B22485;
+    background: #F7DFF5;
+}
+.badge-book{
+    color: #007BFF;
+    background: #F7DFF5;
+}
+
+.card-title {
+    color: #000;
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-slide-button {
+    color: #5372F0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.swiper-button-prev {
+    left: -30px;
+}
+
+.swiper-button-next {
+    right: -30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+    .swiper-slide-button {
+        display: none;
+    }
+}
+
+/* Sección para flip-card */
+.card-flex{
+    display: flex;
+    flex-wrap: wrap; /*Permite ser responsivo*/
+    justify-content: center; /*cartas centrales*/
+    gap: 20px; /* Espacio entre cartas*/ 
+}
+.card-flex h2{
+    text-align: center;
+    margin-top: 20px;
+    width: 120%;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    margin-top: 60px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #070709;
+}
+.card .front img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    color: #F0F0F0;
+    background: rgba(0,0,0,.4);
+    text-align:center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(84, 150, 191);
+    padding: 10px;
+    color: #F0F0F0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #070709; 
+}
+.card .back .link-card{
+    border-top: solid 1px #F0F0F0;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link-card  a{
+    color: #F0F0F0;
+    cursor: pointer;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(0deg);
 }
 
 /* Animaciones para la entrada desde diferentes direcciones */
