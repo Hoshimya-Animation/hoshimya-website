@@ -194,15 +194,30 @@
         </section>
         <section id="blog" class="section">
             <h2>Blog</h2>
-            <article>
-                <h3> <a href="#">Artículo 1</a></h3>
-                <p>Exploramos las últimas tendencias en el mundo del manga y la novela ligera.</p>
-            </article>
-            <article>
-                <h3>Artículo 2</h3>
-                <p>Consejos y trucos para creadores que desean entrar en la industria.</p>
-            </article>
-        </section>
+            <div class="container swiper">
+                <div class="card-wrapper swiper-container">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="https://images.pexels.com/photos/32561584/pexels-photo-32561584.jpeg" alt="Card Image" class="card-image">
+                                <p class="badge badge-book">Artículo</p>
+                                <h2 class="card-title">Mejores restaurantes de los que no has escuchado para tu proximo viaje</h2>
+                                <button class="card-button">→</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://images.pexels.com/photos/32562145/pexels-photo-32562145.jpeg" alt="Card Image" class="card-image">
+                            <p class="badge badge-book">Artículo</p>
+                            <h2 class="card-title">Transporte publiuco en Japón: ¿tan bueno como dicen?</h2>
+                            <button class="card-button">→</button>
+                        </a>
+                    </li>
+                </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         <div class="social-ico">
             <a href="https://www.facebook.com/share/1BPk31q3uG/" class="icons fb" target="_blank"title="Facebook">
                 <i class="bi bi-facebook" aria-hidden="true"></i>
