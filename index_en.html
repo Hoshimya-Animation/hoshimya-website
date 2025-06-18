@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoshimyAnimation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" type="img/stars" href="img/stars.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="keywords" content="Anime, Manga, Job opportunities, Publishing, Distributing, Animating, Light novels, Japan, Latin America, Minimal cost, Limited resources, Imagination">
-    <meta name="description" content="Our company creates job opportunities and provides platforms for publishing, distributing, and animating light novels and manga. We aim to produce anime not only from Japan but also from Latin America. We offer these services at minimal cost, especially for people with limited resources who want to unleash their imagination.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="keywords" content="Anime, Manga, Job opportunities, Publish, Distribute, Animate, Light novels, Japan, Latin America, Emerging talent, Creativity, Dreams, Japanese culture, Asia.">
+    <meta name="description" content="We create opportunities for artists and offer platforms where they can publish, distribute, and animate their works. We want to produce anime not only in Japan but also in Latin America, giving visibility to local talent. All of this is done at an affordable cost, especially for those who have limited resources but a world of imagination to share.">
     <meta http-equiv="Cache-control" content="no-cache"/>
     <meta http-equiv="X-Frame-Options" content="sameorigin"/>
     <meta http-equiv="pragma" content="no-cache"/>
@@ -26,7 +31,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="https://podcast.hoshimyanimation.me/index_en.html">Podcast</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="newsletter_en.html" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,88 +41,112 @@
     <main>
         <section id="home" class="section">
             <h1>Welcome to Our Animation and Literary Creation Page</h1>
-            <p>Explore our stories and creations.</p>
+            <p>Explore unique stories and bring your creations to life.</p>
         </section>
         <section id="about" class="section">
             <h2>About Us</h2>
-            <p>We are a company dedicated to the creation of manga, light novels and also music. In addition, promote Japanese culture, offering opportunities to people with limited resources.
-            There are many artists who want to make their dream come true, to be better artists, to participate in the creation of an anime, so that everyone knows about their creations. But there is no economic resource like in other countries, therefore, we have decided to promote that dream and achieve its goals.</p>
+            <p>We are a company passionate about creativity and visual storytelling. We specialize in the creation of manga, light novels, and music, promoting Japanese culture while providing opportunities for artists with limited resources.
+            We know that many creators dream of seeing their works turned into anime, but a lack of resources can make that dream seem unattainable. That’s why we are committed to supporting emerging talent and helping them achieve their goals.</p>
         </section>
-        <section id="services" class="section">
+        <section class="card-flex section" id="services">
             <h2>Services</h2>
-            <div>
-                <h3>Manga Development</h3>
-                <p>We offer comprehensive manga development services, from conceptualization to publication.</p>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Animation-manga.jpg">
+                    <h3>Publication of works</h3>
+                </div>
+                <div class="face back">
+                    <h3>Publication and editing of manga and light novels, etc.</h3>
+                    <p>From conceptualization to publication, we offer a comprehensive service to take your work to the next level.</p>
+                    <div class="link-card">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Light Novels Creation</h3>
-                <p>We help create light novels from idea to publication, providing support at every stage of the creative process.</p>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Animation-lgnov.png">
+                    <h3>Consulting and animation</h3>
+                </div>
+                <div class="face back" style="background: rgb(242, 183, 5);">
+                    <h3>Consulting, workshops, and animation</h3>
+                    <p>We provide essential tools and knowledge to refine your skills. Additionally, if your work gains popularity, you'll have the opportunity to animate it and bring your own anime to life. (Art: @andsproject)</p>
+                    <div class="link-card">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Consulting and Workshops</h3>
-                <p>We offer consulting and workshops for creators with limited resources, providing essential tools and knowledge.</p>
-            </div>
-            <div>
-                <h3>Animation of your manga or light novel</h3>
-                <p>If your creation became very popular, then you would have the opportunity to animate it and create your own anime.</p>
+            <div class="card">
+                <div class="face front">
+                    <img src="img/Animation-copyright.jpg">
+                    <h3>Copyright protection</h3>
+                </div>
+                <div class="face back" style="background: rgb(17, 24, 42);">
+                    <h3>Copyright protection</h3>
+                    <p>Whether it's a drawing, animation, or literary work, we guarantee that your creation will be recognized as yours. You decide whether to make it public or keep it private.</p>
+                    <div class="link-card">
+                        <a href="#">Details</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="carousel-container section">
+        <div class="carousel-container section location">
             <div class="carousel">
                 <div class="carousel-slide">
-                    <img src="img/ai-generated4.webp" width="100px" height="100px" alt="Imagen 1">
+                    <!--Size of pictures 1600x900-->
+                    <img src="img/Animation_1.webp" alt="Imagen 1" width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Do you like to draw anime drawings?</h2>
-                        <p>We make sure that you are rewarded at a low price.</p>
+                        <h2>Do you have a passion for drawing anime? 📌</h2>
+                        <p>Make your talent shine and gain recognition at an affordable price.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/anime1.webp"  alt="Imagen 2"width="100px" height="100px">
+                    <img src="img/Animation_2.webp"  alt="Imagen 2"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Do you like to create your own mangas and have everyone read them?</h2>
-                        <p>We make your dreams come true.</p>
+                        <h2>Do you dream of creating your own manga and sharing it with the world? ✨</h2>
+                        <p>We make it possible. Bring your story to life and let others enjoy your work.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/ai-generated2.webp" alt="Imagen 3"width="100px" height="100px">
+                    <img src="img/Animation_3.webp"  alt="Imagen 3"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Do you want to animate your light novel and candle to stream on the Internet?</h2>
-                        <p>Let's cheer it up and see how many hearts your story touches until you reach the stars...</p>
+                        <h2>Do you want to see your light novel turned into animation and shared online? 🚀</h2>
+                        <p>Let's make your project a reality and touch hearts with your story.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/ai-generated3.webp" alt="Imagen 4" width="100px" height="100px">
+                    <img src="img/Animation_4.webp" alt="Imagen 4"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Are you looking for a job as artist or drawer?</h2>
-                        <p>Became part of our team and make true your dreams. We're looking for people like you.</p>
+                        <h2>Are you looking for a job as an artist or illustrator? 💼</h2>
+                        <p>Join our team and take your talent to the next level. We're looking for people like you!</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/ai-generated1.webp" alt="Imagen 5" width="100px" height="100px">
+                    <img src="img/Animation_5.webp"alt="Imagen 5"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Would you like to watch your favourite anime without ads or malware?</h2>
-                        <p>Don't worry, we're creating a new website to watch anime freely and without ads and no IA to complete your data. Your privacy is the most important to us.</p>
+                        <h2>Do you want to watch anime without interruptions or risks? 🔒</h2>
+                        <p>Enjoy your favorite series without intrusive ads or security concerns. Your privacy is our priority.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/woman.webp" alt="Imagen 6" width="100px" height="100px">
+                    <img src="img/Animation_6.webp" alt="Imagen 6"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Are you a programmer?</h2>
-                        <p>Our programs are open source, feel freely to make your contribution on GitHub or send your CV to get a job with us.</p>
+                        <h2>Are you a programmer passionate about open-source? 💻</h2>
+                        <p>Contribute to our projects on GitHub or send us your CV to join our team. Your talent can make a difference!</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/ai-generated5.webp" alt="Imagen 7" width="100px" height="100px">
+                    <img src="img/Animation_7.webp" alt="Imagen 7"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Are you a female mangaka?</h2>
-                        <p>If you want to share your work anonymously, we create a pseudonym  for you until you want to be a public figure.</p>
+                        <h2>Are you a mangaka who prefers to share your work anonymously? 🌸</h2>
+                        <p>We help you create a pseudonym until you decide to take the step toward public recognition.</p>
                     </div>
                 </div>
                 <div class="carousel-slide">
-                    <img src="img/ai-generated6.webp" alt="Imagen 8" width="100px" height="100px">
+                    <img src="img/Animation_8.webp"alt="Imagen 8"width="100px" height="100px">
                     <div class="carousel-caption">
-                        <h2>Do you want to become a VA or do you want to make your music known?</h2>
-                        <p>Became part of our team and make true your dreams. We're looking for people like you.</p>
+                        <h2>Do you dream of becoming a voice actor or sharing your music with the world? 🎶</h2>
+                        <p>Join our team and let your voice and talent reach the world. We're looking for artists like you!</p>
                     </div>
                 </div>
             </div>
@@ -136,72 +165,89 @@
         </div>
         <section id="projects" class="section">
             <h2>Projects</h2>
-            <p>Project 1 description: a fascinating story of adventure and friendship.</p>
-            <p>Project 2 description: an epic tale that explores the limits of imagination.</p>
+            <div class="container swiper">
+                <div class="card-wrapper swiper-container">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="https://i.ytimg.com/vi/t5WcL8kiqnE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjHuqgXYeXfSKmkn1TYbeSlxBomgg" alt="Card Image" class="card-image">
+                                <p class="badge badge-video">Video</p>
+                                <h2 class="card-title">FILCO 2025</h2>
+                                <button class="card-button">→</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=zasla1rpPpA" target="_blank" class="card-link">
+                            <img src="https://tube.xy-space.de/lazy-static/previews/8d87959f-9c70-45ba-91f5-d315f5e34851.jpg" alt="Card Image" class="card-image">
+                            <p class="badge badge-video">Video</p>
+                            <h2 class="card-title">Haru Matsuri 2025 CDMX (春まつり'25)</h2>
+                            <button class="card-button">→</button>
+                        </a>
+                    </li>
+                </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         </section>
         <section id="blog" class="section">
             <h2>Blog</h2>
-            <article class="quit-h">
-                <h3><a href="#">Article 1</a></h3>
-                <p>We explore the latest trends in the world of manga and light novels.</p>
-            </article>
-            <article>
-                <h3>Article 2</h3>
-                <p>Tips and tricks for creators looking to enter the industry.</p>
-            </article>
+            <div class="container swiper">
+                <div class="card-wrapper swiper-container">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="https://images.pexels.com/photos/32561584/pexels-photo-32561584.jpeg" alt="Card Image" class="card-image">
+                                <p class="badge badge-book">Article</p>
+                                <h2 class="card-title">Best restaurants you haven't heard of for your next trip</h2>
+                                <button class="card-button">→</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://images.pexels.com/photos/32562145/pexels-photo-32562145.jpeg" alt="Card Image" class="card-image">
+                            <p class="badge badge-book">Article</p>
+                            <h2 class="card-title">Public transport in Japan: as good as they say? </h2>
+                            <button class="card-button">→</button>
+                        </a>
+                    </li>
+                </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         </section>
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <form id="contact-form" name="form-data">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="country">Country:</label>
-                <select id="country" name="country" required>
-                    <option value="" disabled selected>Select your country</option>
-                    <option value="United States">United States</option>
-                    <option value="Mexico">Mexico</option>
-                    <option value="Venezuela">Venezuela</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Peru">Peru</option>
-                    <option value="Brazil">Brazil</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Bolivia">Bolivia</option>
-                    <!-- Add more countries as needed -->
-                </select>
-    
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="" disabled selected>Select your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                    <option value="pns">Prefer not to say</option>
-                </select>
-                <label for="telegram">Telegram or Phone Number:</label>
-                <input type="text" id="telegram" name="telegram" placeholder="Enter your Telegram handle or phone number" required>
-                <label for="comments">Message:</label>
-                <textarea id="comments" name="message" rows="4" placeholder="Enter your comments here"></textarea>
-    
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+        <div class="social-ico">
+            <a href="https://www.facebook.com/share/1BPk31q3uG/" class="icons fb" target="_blank"title="Facebook">
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35"class="icons x" target="_blank" title="X">
+                <i class="bi bi-twitter-x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@HoshiiTV" target="_blank"class="icons yb" title="YouTube">
+                <i class="bi bi-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" class="icons instagram" target="_blank" title="Instagram">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.tiktok.com/@hoshimyanimationofficial?is_from_webapp=1&sender_device=pc" class="icons tiktok" target="_blank" title="TikTok">
+                <i class="bi bi-tiktok" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Hoshimya-Animation" class="icons github" target="_blank" title="GitHub">
+                <i class="bi bi-github" aria-hidden="true"></i>
+            </a>
+        </div>
     </main>
-  </div>
+ 
     <!-- Footer -->
     <footer class="section">
-        <div class="social-icons">
-            <a href="https://github.com/Hoshimya-Animation" target="_blank" title="GitHub"><i class="fab fa-github""></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-            <a href="https://youtube.com" target="_blank"title="YouTube"><i class="fab fa-youtube" ></i></a>
-            <a href="https://www.facebook.com/share/X4ixftNkrV9Bxafw/?mibextid=qi2Omg" target="_blank"title="Facebook"><i class="fab fa-facebook" ></i></a>
-            <a href="https://twitter.com" target="_blank" title="X"><i class="fab fa-x"></i></a>
-            <a href="https://instagram.com" target="_blank"title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <div class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+            <a href="https://github.com/Hoshimya-Animation"target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@HoshiiTV" target="_blank"title="YouTube"><i class="fab fa-youtube" ></i></a>
+            <a href="https://www.facebook.com/share/1BPk31q3uG/" target="_blank"title="Facebook"><i class="fab fa-facebook" ></i></a>
+            <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35" target="_blank" title="X"><i class="fab fa-x"></i></a>
+            <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" target="_blank"title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@hoshimyanimationofficial?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
         <div class="language-switcher">
             <button class="lang-button" onclick="switchLanguage('en')">English</button>
@@ -211,6 +257,8 @@
     </footer>
     <script src="js/animation.js"></script>
     <script src="js/carrousel.js"></script>
+    <script src="js/card-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
