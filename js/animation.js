@@ -31,3 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(section);
     });
 });
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("nav-menu").classList.toggle("show");
+});
