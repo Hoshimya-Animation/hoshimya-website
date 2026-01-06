@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const paginas = ['es/noticias.html', /* agrega más páginas según sea necesario */];
+    const paginas = ['es/noticias.html','en/news.html', /* agrega más páginas según sea necesario */];
     const resultados = await buscarEnPaginas(term, paginas);
 
     articlesContainer.innerHTML = resultados.length
