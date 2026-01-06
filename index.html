@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="qJdYHK8haQy_jFVTztt1OP-vOTPtfspZGEkd_umjJ6I" />
-    <title>Animación y Creación Literaria</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoshimy Animation — Entertainment, culture and animation company.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -22,252 +22,146 @@
     <meta http-equiv="X-Frame-Options" content="sameorigin"/>
     <meta http-equiv="pragma" content="no-cache"/>
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="mobile-header">
-                <button id="menu-toggle">&#9776;</button>
-                <img src="img/logo.png" alt="Logo de HoshimyAnimation" class="mobile-logo">
-            </div>
-            <ul id="nav-menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="https://podcast.hoshimyanimation.com">Podcast</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="newsletter.html" target="_blank">Contacto</a></li>
-            </ul>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="https://www.hoshimyanimation.com">
+        <img src="img/logo.png" alt="Hoshimy Animation Logo" />
+      </a>
+      <nav class="nav">
+        <a href="https://www.hoshimyanimation.com/es/noticias">Noticias y Eventos</a>
+        <a href="https://www.hoshimyanimation.com/es/acerca.html">Acerca de</a>
+        <a href="https://podcast.hoshimyanimation.com">Podcast</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge">Bienvenido</span>
+        <h1>Hoshimy Animation: Anime, Cultura y Educación</h1>
+        <p>
+          Hoshimy Animation es una empresa dedicada a la creación y difusión de contenido asiático en Latinoamérica. Nos especializamos en manga, novelas ligeras, música, animación y traducción, ofreciendo oportunidades a artistas emergentes y acercando la riqueza cultural de Asia a nuevas audiencias.
+          <br/><br/>
+          Crédito de la imagen (derecha) <a href="https://pixabay.com/es/users/andsproject-26081561/" target="__blank" class="credit-link">andsproject</a>.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://www.hoshimyanimation.com/es/acerca.html">Conócenos</a>
+          <a class="btn" href="#noticias">Ver noticias</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="https://cdn.pixabay.com/photo/2024/11/06/20/31/girl-9179307_960_720.png?q=80&w=1200&auto=format&fit=crop" alt="Andsproject Picture" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Main grid -->
+  <section class="container grid" id="noticias">
+    <!-- Blog content -->
+    <div class="content">
+        <div class="articles-container">
+            <article class="card" data-tags="video japon japan">
+                <img src="https://img.youtube.com/vi/t5WcL8kiqnE/maxresdefault.jpg" alt="Anime original" />
+                <div class="card-body">
+                    <a class="chip" href="#">Vídeo</a>
+                    <a class="chip" href="#">Japón</a>
+                    <h2><a href="https://www.youtube.com/watch?v=t5WcL8kiqnE">¿Qué es la FILCO?</a></h2>
+                    <p>La Feria Internacional del Libro de Coyoacán (FILCO) es uno de los encuentros literarios más destacados de Latinoamérica, con la misión de difundir la cultura, historia y arte de México a través de los libros. En su edición 2025, Japón fue el país invitado y Coahuila el estado invitado. El reportero Isaac Salgado desde HoshiiTV recorrió la feria entrevistando a participantes como un samurái que compartió las virtudes del bushido, editoriales mexicanas independientes como Familia Usaka, Chipotle, y proyectos internacionales como NBK Libros y Happy Science. También se destacó la presencia de la librería El Rincón de Macondo, que reúne a decenas de autores y proyectos artísticos. La FILCO se celebró del 7 al 16 de marzo, con actividades especiales como la presentación de la banda de J-Pop Bakemono y una charla de Julieta Fierro sobre astronomía.</p>
+                    <div class="card-meta">
+                      <span>14 min de visualización</span>
+                      <span>Por HoshiiTV</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+              <img src="https://img.youtube.com/vi/zasla1rpPpA/maxresdefault.jpg" alt="Idiomas" />
+              <div class="card-body">
+                <a class="chip" href="#">Idiomas</a>
+                <h2><a href="https://www.youtube.com/watch?v=zasla1rpPpA">Curso piloto: Japonés en español</a></h2>
+                <p>El Haru Matsuri 2025, celebrado en la Asociación México Japonesa los días 26 y 27 de abril, es un festival que une la riqueza cultural de Japón con la calidez de México. “Haru” significa primavera y “Matsuri” festival, y en esta edición se contó con la presencia del embajador de Japón en México, Saiko. El evento ofreció espectáculos de artes marciales, canto y danza tradicional japonesa, además de una exposición de kimonos y la venta de sakuras.</p>
+                <div class="card-meta">
+                  <span>6 min de visualización</span>
+                  <span>Por HoshiiTV</span>
+                </div>
+              </div>
+            </article>
+            <!-- Referencia del artículo(Futuras publicaciones): -->
+<!--           <article class="card"> 
+              <img src="https://img.youtube.com/vi/zasla1rpPpA/maxresdefault.jpg" alt="Idiomas" />
+              <div class="card-body">
+                <a class="chip" href="#">Idiomas</a>
+                <h2><a href="es/eventos/post.html">Curso piloto: Japonés en español</a></h2>
+                <p>Material diseñado para hispanohablantes, sin necesidad de aprender inglés primero.</p>
+                <div class="card-meta">
+                  <span>5 min de lectura</span>
+                  <span>Por Formación Hoshimy</span>
+                </div>
+              </div>
+            </article> -->
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="widget search">
+        <label for="q"><strong>Buscar</strong></label>
+        <div class="search-box">
+          <input id="q" type="search" placeholder="Buscar noticias, eventos..." />
+          <button id="searchBtn" aria-label="Buscar">🔍</button>
+        </div>
+      </div>
+
+      <div class="widget schedule" id="eventos">
+        <h3>Próximos eventos</h3>
+        <ul class="schedule-list">
+          <!-- <li><strong>12 Feb:</strong> Apertura festival — Estrenos</li> -->
+          <!-- <li><strong>13 Feb:</strong> Taller de japonés</li> -->
+          <!-- <li><strong>15 Feb:</strong> Meet & greet virtual</li> -->
+        </ul>
+      </div>
+
+      <div class="widget newsletter">
+        <h3>Boletín</h3>
+        <p>Recibe novedades y descuentos exclusivos.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="tu@email.com" required />
+          <button class="btn primary small" type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </aside>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contacto">
+
+    <div class="container footer-inner">
+            <div class="social-links">
+        <a href="https://www.facebook.com/share/1BPk31q3uG/" target="_blank"title="Facebook"><i class="fab fa-facebook" ></i></a>
+        <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35" target="_blank" title="X"><i class="fab fa-x"></i></a>
+        <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" target="_blank"title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@HoshiiTV" target="_blank"title="YouTube"><i class="fab fa-youtube" ></i></a>
+        <a href="https://www.tiktok.com/@hoshimyanimationofficial?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+        <p>&copy; 2026 Hoshimy Animation — Ideas que iluminan cielos.</p>
+        <nav class="footer-nav">
+            <a href="https://hoshimyanimation/es/acerca.html">Acerca</a>
+            <a href="https://hoshimyanimation/es/privacidad">Privacidad</a>
+            <a href="mailto:contacto@hoshimyanimation.com">Contacto</a>
         </nav>
-    </header>
+        <div class="footer-actions">
+            <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+            <button id="langToggle" class="lang-toggle" aria-label="Cambiar idioma">EN</button>
+        </div>
+    </div>
+  </footer>
 
-    <!-- Contenido Principal -->
-    <main>
-        <section id="home">
-            <h1>Bienvenidos a Nuestra Página de Animación y Creación Literaria</h1>
-            <p>Explora historias únicas y da vida a tus creaciones</p>
-        </section>
-        <section id="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos una empresa apasionada por la creatividad y la narrativa visual. Nos especializamos en la creación de manga, novelas ligeras y música, promoviendo la cultura japonesa mientras brindamos oportunidades a artistas con recursos limitados.
-            Sabemos que muchos creadores sueñan con ver sus obras convertidas en anime, pero la falta de recursos puede hacer que ese sueño parezca inalcanzable. Por eso, nos comprometemos a impulsar el talento emergente y ayudarles a cumplir sus metas.</p>
-        </section>
-        <section class="card-flex section" id="services">
-            <h2>Servicios</h2>
-            <div class="card">
-                <div class="face front">
-                    <img src="img/Animation-manga.jpg">
-                    <h3>Publicación de obras</h3>
-                </div>
-                <div class="face back">
-                    <h3>Publicación, edición de mangas y novelas ligeras, etc.</h3>
-                    <p>Desde la conceptualización hasta la publicación, ofrecemos un servicio integral para llevar tu obra al siguiente nivel, garantizamos que tu creación será reconocida como tuya.
-                    </p>
-                    <div class="link-card">
-                        <a href="#">Detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face front">
-                    <img src="img/Animation-lgnov.png">
-                    <h3>Asesoría, talleres y animación</h3>
-                </div>
-                <div class="face back" style="background: rgb(242, 183, 5);">
-                    <h3>Asesoría, talleres y animación</h3>
-                    <p>Te proporcionamos herramientas y conocimientos esenciales para perfeccionar tus habilidades. Además, si tu obra gana popularidad, tendrás la oportunidad de animarla y hacer realidad tu propio anime.(Arte: @andsproject)</p>
-                    <div class="link-card">
-                        <a href="#">Detalles</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face front">
-                    <img src="img/Animation-copyright.jpg">
-                    <h3>Traducción</h3>
-                </div>
-                <div class="face back" style="background: rgb(17, 24, 42);">
-                    <h3>Traducción</h3>
-                    <p>Traducción profesional de contenido asiático al inglés, francés y español. Desde obras literarias hasta contenido visual, adaptamos tu creación para que conecte con nuevas audiencias sin perder su esencia original.</p>
-                    <div class="link-card">
-                        <a href="#">Detalles</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="carousel-container section location">
-            <div class="carousel">
-                <div class="carousel-slide">
-                    <!--Size of pictures 1600x900-->
-                    <img src="img/Animation_1.webp" alt="Imagen 1" width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Te apasiona dibujar anime? 📌</h2>
-                        <p>Haz que tu talento brille y obtén reconocimiento a un precio accesible.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_2.webp"  alt="Imagen 2"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Sueñas con crear tu propio manga y compartirlo con el mundo? ✨</h2>
-                        <p>Nosotros lo hacemos posible. Da vida a tu historia y deja que otros disfruten tu obra.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_3.webp"  alt="Imagen 3"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Quieres ver tu novela ligera convertida en animación y compartirla en línea? 🚀</h2>
-                        <p>Hagamos realidad tu proyecto y toquemos corazones con tu historia.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_4.webp" alt="Imagen 4"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Buscas trabajo como artista o dibujante? 💼</h2>
-                        <p>Únete a nuestro equipo y lleva tu talento al siguiente nivel. ¡Estamos buscando gente como tú!</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_5.webp"alt="Imagen 5"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Quieres ver anime sin interrupciones ni riesgos? 🔒</h2>
-                        <p>Disfruta de tus series favoritas sin publicidad invasiva ni preocupaciones de seguridad. Tu privacidad es nuestra prioridad.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_6.webp" alt="Imagen 6"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Eres programador y te apasiona el código abierto?💻</h2>
-                        <p>Contribuye a nuestros proyectos en GitHub o envíanos tu CV para formar parte de nuestro equipo. ¡Tu talento puede marcar la diferencia!</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_7.webp" alt="Imagen 7"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Eres una mangaka y prefieres compartir tu obra de forma anónima? 🌸</h2>
-                        <p>Te ayudamos a crear un seudónimo hasta que decidas dar el paso al reconocimiento público.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/Animation_8.webp"alt="Imagen 8"width="100px" height="100px">
-                    <div class="carousel-caption">
-                        <h2>¿Sueñas con ser actor de voz o dar a conocer tu música? 🎶</h2>
-                        <p>Únete a nuestro equipo y deja que tu voz y talento lleguen al mundo. Buscamos artistas como tú.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="indicators">
-                <span class="dot" onclick="currentSlide(0)"></span>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-            </div>
-        </div>
-        <section id="projects" class="section">
-            <h2>Proyectos</h2>
-            <div class="container swiper">
-                <div class="card-wrapper swiper-container">
-                    <ul class="card-list swiper-wrapper">
-                        <li class="card-item swiper-slide">
-                            <a href="https://www.youtube.com/watch?v=t5WcL8kiqnE" class="card-link">
-                                <img src="https://i.ytimg.com/vi/t5WcL8kiqnE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjHuqgXYeXfSKmkn1TYbeSlxBomgg" alt="Card Image" class="card-image">
-                                <p class="badge badge-video">Vídeo</p>
-                                <h2 class="card-title">FILCO 2025</h2>
-                                <button class="card-button">→</button>
-                            </a>
-                        </li>
-                        <li class="card-item swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=zasla1rpPpA" target="_blank" class="card-link">
-                            <img src="https://tube.xy-space.de/lazy-static/previews/8d87959f-9c70-45ba-91f5-d315f5e34851.jpg" alt="Card Image" class="card-image">
-                            <p class="badge badge-video">Vídeo</p>
-                            <h2 class="card-title">Haru Matsuri 2025 CDMX (春まつり'25)</h2>
-                            <button class="card-button">→</button>
-                        </a>
-                    </li>
-                </ul>
-            <div class="swiper-pagination"></div>
-            <!-- Navigation Buttons -->
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
-        </section>
-        <section id="blog" class="section">
-            <h2>Blog</h2>
-            <div class="container swiper">
-                <div class="card-wrapper swiper-container">
-                    <ul class="card-list swiper-wrapper">
-                        <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                                <img src="https://images.pexels.com/photos/32561584/pexels-photo-32561584.jpeg" alt="Card Image" class="card-image">
-                                <p class="badge badge-book">Artículo</p>
-                                <h2 class="card-title">Mejores restaurantes de los que no has escuchado para tu proximo viaje</h2>
-                                <button class="card-button">→</button>
-                            </a>
-                        </li>
-                        <li class="card-item swiper-slide">
-                        <a href="#" class="card-link">
-                            <img src="https://images.pexels.com/photos/32562145/pexels-photo-32562145.jpeg" alt="Card Image" class="card-image">
-                            <p class="badge badge-book">Artículo</p>
-                            <h2 class="card-title">Transporte público en Japón: ¿tan bueno como dicen?</h2>
-                            <button class="card-button">→</button>
-                        </a>
-                    </li>
-                </ul>
-            <div class="swiper-pagination"></div>
-            <!-- Navigation Buttons -->
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
-        </section>
-        <div class="social-ico">
-            <a href="https://www.facebook.com/share/1BPk31q3uG/" class="icons fb" target="_blank"title="Facebook">
-                <i class="bi bi-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35"class="icons x" target="_blank" title="X">
-                <i class="bi bi-twitter-x" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/@HoshiiTV" target="_blank"class="icons yb" title="YouTube">
-                <i class="bi bi-youtube" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" class="icons instagram" target="_blank" title="Instagram">
-                <i class="bi bi-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.tiktok.com/@hoshimyanimationofficial?is_from_webapp=1&sender_device=pc" class="icons tiktok" target="_blank" title="TikTok">
-                <i class="bi bi-tiktok" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/Hoshimya-Animation" class="icons github" target="_blank" title="GitHub">
-                <i class="bi bi-github" aria-hidden="true"></i>
-            </a>
-        </div>
-    </main>
-
-    <footer class="section">
-        <div class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-            <a href="https://github.com/Hoshimya-Animation"target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/@HoshiiTV" target="_blank"title="YouTube"><i class="fab fa-youtube" ></i></a>
-            <a href="https://www.facebook.com/share/1BPk31q3uG/" target="_blank"title="Facebook"><i class="fab fa-facebook" ></i></a>
-            <a href="https://x.com/hoshimyanima?t=ekBu_6UMXmXeKjtoZ4ZPxg&s=35" target="_blank" title="X"><i class="fab fa-x"></i></a>
-            <a href="https://www.instagram.com/hoshimyanimation?igsh=czl0OXVleHBkcm8w" target="_blank"title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@hoshimyanimationofficial?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <div class="language-switcher">
-            <select id="language-select" onchange="switchLanguage(this.value)">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-            </select>
-        </div>
-        <p>&copy; 2025 HoshimyAnimation. Todos los derechos reservados.</p>
-    </footer>
-    
-    <script src="js/animation.js"></script>
-    <script src="js/carrousel.js"></script>
-    <script src="js/card-slider.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
+
