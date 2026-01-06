@@ -47,15 +47,20 @@ function applyLang(lang){
 if (!localStorage.getItem('lang')) {
   applyLang(browserLang);
 } else {
-  // Solo actualiza el texto del botón, sin redirigir
-  langToggle.textContent = currentLang === 'es' ? 'EN' : 'ES';
+  if (langToggle) {
+    langToggle.textContent = currentLang === 'es' ? 'EN' : 'ES';
+  }
 }
 
+
 // Toggle idioma manual (redirige al hacer clic)
-langToggle.addEventListener('click', () => {
-  const nextLang = currentLang === 'es' ? 'en' : 'es';
-  applyLang(nextLang);
-});
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    const nextLang = currentLang === 'es' ? 'en' : 'es';
+    applyLang(nextLang);
+  });
+}
+
 
 
 //Normilizar busqueda
@@ -99,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const q = document.getElementById('q');
   const searchBtn = document.getElementById('searchBtn');
   const articlesContainer = document.querySelector('.articles-container');
-  const contenidoOriginal = articlesContainer.innerHTML;
+  if (!q || !searchBtn || !articlesContainer) return;
   searchBtn.addEventListener('click', async () => {
     const term = normalizar(q.value.trim());
     if (!term) {
