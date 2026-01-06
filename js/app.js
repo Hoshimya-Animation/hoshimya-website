@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchBtn = document.getElementById('searchBtn');
   const articlesContainer = document.querySelector('.articles-container');
   if (!q || !searchBtn || !articlesContainer) return;
+  const contenidoOriginal = articlesContainer.innerHTML;
   searchBtn.addEventListener('click', async () => {
     const term = normalizar(q.value.trim());
     if (!term) {
