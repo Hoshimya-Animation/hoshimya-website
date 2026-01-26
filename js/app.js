@@ -37,21 +37,11 @@ function applyLang(lang){
 
   // Redirige según idioma
   if(lang === 'en'){
-    window.location.href = "/en/index.html"; // versión en inglés
-  } else if (lang === 'es'){
-    window.location.href = "/index.html";    // versión en español
+    window.location.href = "/en/"; // versión en inglés
+  } else {
+    window.location.href = "/";    // versión en español
   }
 }
-
-// Inicializar idioma solo la primera vez
-if (!localStorage.getItem('lang')) {
-  applyLang(browserLang);
-} else {
-  if (langToggle) {
-    langToggle.textContent = currentLang === 'es' ? 'EN' : 'ES';
-  }
-}
-
 
 // Toggle idioma manual (redirige al hacer clic)
 if (langToggle) {
@@ -60,7 +50,6 @@ if (langToggle) {
     applyLang(nextLang);
   });
 }
-
 
 
 //Normilizar busqueda
